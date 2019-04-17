@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ var arr = [];
+ for (i=0;i<5;i++){
+     arr[i] = Math.floor(Math.random()*20)
+ }
+ console.log(arr);
+
+ function search(arr) {
+     for (i=0;i<10;i++){
+        x = parseInt(prompt("nhap so doan"));
+        if (x === arr[0]){
+            alert("you win");
+            break;
+        } else if (x < arr[0]){
+          alert("too low");
+        } else if (x > arr[0]){
+          alert("too high");
+        }
+     }
+ }
+ search(arr);
+</script>
+</body>
+</html>
